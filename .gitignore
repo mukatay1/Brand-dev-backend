@@ -1,0 +1,12 @@
+# Exclude .env file
+.env
+
+# Ignore pycache and compiled Python files
+__pycache__/
+*.pyc
+
+# Ignore local development settings
+local_settings.py
+
+# Ignore static files directory
+/static/

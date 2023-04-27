@@ -1,0 +1,33 @@
+ *, body {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+
+}
+#grp-context-navigation {
+    z-index:-99;
+}
+
+.branding {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-global {
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    padding-top: 10px;
+}
+
+.nav-global-item {
+    padding-right:60px;
+}
+
+.my_footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}

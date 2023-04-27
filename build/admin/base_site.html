@@ -1,0 +1,45 @@
+{% extends "admin/base.html" %}
+{% load static %}
+
+{% block title %}
+{% if title %}{{ title }} | {% endif %}{{ site_title|default:_('Django site admin') }}
+{% endblock %}
+
+{% block branding %}
+<div class="branding">
+    <h1>
+        <a href="{% url 'admin:index' %}">
+            BRAND
+        </a>
+    </h1>
+</div>
+
+{% endblock %}
+
+{% block nav-global %}
+<div class="nav-global">
+    <div class="nav-global-item"><a href="{% url 'admin:index' %}"> Home</a></div>
+    <div class="nav-global-item"><a href="{% url 'admin:password_change' %}">Change password</a></div>
+    <div class="nav-global-item"><a href="{% url 'admin:logout' %}">Log out</a></div>
+</div>
+<link rel="stylesheet" type="text/css" href="{% static 'backend/css/custom_admin.css' %}">
+{% endblock %}
+
+{% block userlinks %}
+{% endblock %}
+
+{% block messages %}
+<br>
+<br>
+<br>
+{% endblock %}
+
+{% block context-navigation %}
+{% endblock %}
+
+
+<!--{% block footer %}-->
+<!--<div class="my_footer">-->
+<!--    footer-->
+<!--</div>-->
+<!--{% endblock %}-->
